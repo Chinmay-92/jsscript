@@ -13,3 +13,12 @@ $("#hidden").click(function (){
   $(this).hide();
   $("#mytext").css('');
 });
+
+var jsonString = JSON.stringify({
+    make: "McLaren",
+    model: "MP4-12C",
+    miles: 5023
+});
+
+var car = JSON.parse(jsonString);
+alert(car.model);
