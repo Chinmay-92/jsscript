@@ -1,0 +1,14 @@
+.checkOutLine{
+		border: 2px solid blue;
+		width:500px;
+		height:200px;
+		text-align: center;
+		padding: 5px;
+	}
+
+	.checkOutLine span{
+		display:inline;
+		text-align: center;
+		color:red;
+		float:left;
+	}

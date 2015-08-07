@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Check Catalogue</title>
+   <script src =”catalogue.js”></script>
+   <link href="check.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Show check type options -->
+<div>
+    <select id="checkType" onchange="checkType(this)">
+      <option value=" ">Please select a check type</option>
+      <option value="standard">Standard Checks</option>
+      <option value="voucher">Voucher Checks</option>
+      <option value="wallet">Wallet Checks</option>
+    </select>
+</div>
+<br>
+
+<!-- Check container hidden initially-->
+<div id="chckDetails" style="display:block;">
+	<div class="checkOutLine">
+	<!-- Logo to be displayed only for Voucher check -->
+		<span id="bankLogoLft" style="display:none">
+			Bank Logo
+		</span>
+		<span id="bankName">
+			Bank Name
+		</span>
+		<span id="bankLogoRit" style="float:right !important">
+			Bank Logo
+		</span>
+		<br>
+		<br>
+		<span id="accntNum">
+			Account Number
+		</span>
+		<br>
+		<br>
+		<span id="">
+			Routing Number
+		</span>
+		<br>
+		<br>
+		<span>
+			Starting Number
+		</span>
+		<br>
+		<br>
+		<span>
+			Colors
+		</span>
+		<br>
+		<br>
+		<!-- Signature to be displayed only for Wallet check -->
+		<span id="signature" style="display:none">
+			Signature: <input type="checkbox" />
+		</span>
+	</div>
+</div>
+
+</body>
+
+</html>
