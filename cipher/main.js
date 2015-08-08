@@ -22,3 +22,4 @@ var jsonString = JSON.stringify({
 
 var car = JSON.parse(jsonString);
 alert(car.model);
+
